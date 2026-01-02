@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTRATION FORM</title>
+</head>
+<body style="background-color: cadetblue;">
+  <form action="/submit.php" method="post">
+    <h1>REGISTRATION FORM</h1>
+
+ 
+   NAME: <input type="text" id="user name" placeholder="user name" required><br></br>
+
+  EMAIL: <input type="email" placeholder="ENTER YOUR EMAIL" required><br></br>
+
+   AGE:  <input type="number" placeholder="ENTER YOR AGE" required><br></br>
+
+   
+   MALE: <input type="radio" id="male" name="gender" value="male">
+
+    <lable for="female">FEMALE:</lable>
+    <input type="radio" id="female" name="gender" value="female">
+
+    <lable for="other">OTHER:</lable>
+    <input type="radio" id="other" name="gender"><br><br>
+
+
+
+ PASSWORD: <input type="password" placeholder="ENTER YOUR PASSWORD" required><br></br>
+
+  DATE:   <input type="date"><br></br> 
+
+           <lable for="c">  c</lable>
+           <input type="checkbox" id="c" name="language" value="c"><br>
+
+           <lable for="java"> java</lable>
+           <input type="checkbox" id="java" name="language" value="java"><br>
+
+           <lable for="python"> python</lable>
+           <input type="checkbox" id="python" name="language" value="python"><br><br>
+           
+           <lable for="contry">Select your country</label>
+           <select name="country" id="country">
+            <option value="india">INDIA</option>
+            <option value="usa">USA</option>
+            <optin value="uk">UK</optin>
+            <option value="canada">canada</option>
+           </select><br></br>
+ 
+
+
+
+  EXPERIENECE: <input type="range" min="1" max="10"><br></br>
+
+  UPLOAD RESUME: <input type="file"><br></br>
+ <input type="submit" value="SUBMIT">
+ <input type="reset" value="RESET">
+
+  </form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(235, 165, 140);
+        }
+        #msg {
+            color: blue;
+            font-size: 20px;
+        }
+        #name {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            background-color: rgb(189, 241, 189);
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+            border: black 2px solid;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: rgb(78, 218, 211);
+        }
+
+        
+    </style>
+
+<form onsubmit="return check()">
+    <input id="name" oninput="live()" placeholder="Enter name">
+    <p id="msg"></p>
+    <button>Submit</button><br><br>
+    
+
+   
+</form>
+
+<script>
+function live() {
+    document.getElementById("msg").innerHTML =
+        "NAME: " + document.getElementById("name").value;
+}
+
+function check() {
+    let x = document.getElementById("name").value;
+    if (x == "") {
+        alert("Name cannot be empty");
+        return false;
+    }
+    alert("Form Submitted Successfully");
+    return true;
+}
+</script>
+
+</body>
+</html>

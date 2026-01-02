@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        body{
+            background-color: mediumaquamarine;
+            text-align: center;
+            
+        }
+    </style>
+<h2 style="text-align: center; background-color: lawngreen;">Simple Calculator using JavaScript</h2>
+
+<input id="n1" placeholder="Enter number 1">
+<input id="n2" placeholder="Enter number 2">
+<button onclick="calc()">Calculate</button>
+
+<p id="res"></p>
+
+<script>
+function calc() {
+    let a = Number(document.getElementById("n1").value);
+    let b = Number(document.getElementById("n2").value);
+
+    document.getElementById("res").innerHTML =
+        "Sum = " + (a+b) + "<br>Difference = " + (a-b) +
+        "<br>Product = " + (a*b) + "<br>Division = " + (a/b);
+}
+</script>
+
+</body>
+</html>
